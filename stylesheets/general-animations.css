@@ -215,6 +215,7 @@
             animation: breathe-small 500ms;
             animation-iteration-count: infinite;
             animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
         }
 
         .breathe-small-2 {
@@ -241,6 +242,10 @@
             animation-timing-function: ease-in-out;
         }
 
+        .bounce-in-left-small {
+            animation: bounce-in-left-small 600ms;
+            animation-timing-function: ease-out;
+        }
 
 /*#endregion Classes */
 
@@ -393,6 +398,31 @@
         }
         100% {
         transform: scale(1);
+        }
+    }
+
+    /* name : bounce-in-small */
+    /* purpose : have an object bounce in with small bounces */
+    @keyframes bounce-in-left-small {
+        0% {
+            transform: translateY(0%) translateX(-100%);
+            opacity: 0;
+        }
+        20% {
+            transform: translateY(-40%) translateX(-80%);
+            opacity: 1;
+        }
+        40% {
+            transform: translateY(-10%) translateX(-50%);
+        }
+        60% {
+            transform: translateY(-30%) translateX(-30%);
+        }
+        80% {
+            transform: translateY(-15%) translateX(-15%);
+        }
+        100% {
+            transform: translateY(0%) translateX(0%);
         }
     }
 /*#endregion Keyframes */
