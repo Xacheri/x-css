@@ -10,243 +10,355 @@
 
 /*#region Classes */
 
-    /* no-overflow */
+    /*#region no-overflow */
     /* to hide overflow on animations that work off screen */
         .no-overflow {
             overflow-x: hidden; /* Hide horizontal scrollbar */
             overflow-y: hidden; /* Hide vertical scrollbar */
             white-space: nowrap; /* Prevent line breaks in case of very narrow viewport */
         }
+    /*#endregion */
 
-    /* slide-in-left */
-    /* Three options, decreasing in speed */
-        .slide-in-left-1 {
-            animation: slide-in-left 500ms;
+    /*#region slide-in-left */
+        /* Three options, decreasing in speed */
+            .slide-in-left-1 {
+                animation: slide-in-left 500ms;
+                animation-timing-function: ease-out;
+            }
+
+            .slide-in-left-2 {
+                animation: slide-in-left 1000ms;
+                animation-timing-function: ease-out;
+            }
+
+            .slide-in-left-3 {
+                animation: slide-in-left 1500ms;
+                animation-timing-function: ease-out;
+            }
+    /*#endregion */
+
+    /*#region slide-in-right */
+        /* Three options, decreasing in speed */
+            .slide-in-right-1 {
+                animation: slide-in-right 500ms;
+                animation-timing-function: ease-out;
+            }
+
+            .slide-in-right-2 {
+                animation: slide-in-right 1000ms;
+                animation-timing-function: ease-out;
+            }
+
+            .slide-in-right-3 {
+                animation: slide-in-right 1500ms;
+                animation-timing-function: ease-out;
+            }
+    /*#endregion */
+    /*#region slide-in-above */
+        /* Three options, decreasing in speed */
+            .slide-in-above-1 {
+                animation: slide-in-above 500ms;
+                animation-timing-function: ease-out;
+            }
+
+            .slide-in-above-2 {
+                animation: slide-in-above 1000ms;
+                animation-timing-function: ease-out;
+            }
+
+            .slide-in-above-3 {
+                animation: slide-in-above 1500ms;
+                animation-timing-function: ease-out;
+            }
+    /*#endregion */
+    /*#region drop-in-left */
+        /* Three options, decreasing in speed */
+            .drop-in-left-1 {
+                animation: drop-in-left 500ms;
+            }
+
+            .drop-in-left-2 {
+                animation: drop-in-left 1000ms;
+            }
+
+            .drop-in-left-3 {
+                animation: drop-in-left 1500ms;
+            }
+    /*#endregion */
+    /*#region drop-in-right */
+        /* Three options, decreasing in speed */
+            .drop-in-right-1 {
+                animation: drop-in-right 500ms;
+            }
+
+            .drop-in-right-2 {
+                animation: drop-in-right 1000ms;
+            }
+
+            .drop-in-right-3 {
+                animation: drop-in-right 1500ms;
+            }
+    /*#endregion */
+    /*#region spin */
+        /* two orientations: clockwise and counter-clockwise */
+        /* three options : half, whole, and infinite */
+
+            .spin-clockwise-half {
+                animation: half-spin-clockwise 1000ms;
+            }
+
+            .spin-clockwise-whole {
+                animation: spin-clockwise 1000ms;
+            }
+
+            .spin-clockwise-infinite {
+                animation: spin-clockwise 1000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            
+            .spin-counter-clockwise-half {
+                animation: half-spin-counter-clockwise 1000ms;
+            }
+
+            .spin-counter-clockwise-whole {
+                animation: spin-counter-clockwise 1000ms;
+            }
+
+            .spin-counter-clockwise-infinite {
+                animation: spin-counter-clockwise 1000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+    /*#endregion */
+    /*#region breathe */
+        /* Three scale option - big, small, medium */
+        /* Three speed options - 1, 2, 3 */
+        /* append -hover to apply on hover*/
+            .breathe-big-1 {
+                animation: breathe-big 500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-big-1-hover:hover {
+                animation: breathe-big 500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-big-2 {
+                animation: breathe-big 500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-big-2-hover:hover {
+                animation: breathe-big 1000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-big-3 {
+                animation: breathe-big 1500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-big-3-hover:hover {
+                animation: breathe-big 1500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-medium-1 {
+                animation: breathe-medium 500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-medium-1-hover:hover {
+                animation: breathe-medium 500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-medium-2 {
+                animation: breathe-medium 500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-medium-2-hover:hover {
+                animation: breathe-medium 1000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-medium-3 {
+                animation: breathe-medium 1500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-medium-3-hover:hover {
+                animation: breathe-medium 1500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-small-1 {
+                animation: breathe-small 500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-small-1-hover:hover {
+                animation: breathe-small 500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: forwards;
+            }
+
+            .breathe-small-2 {
+                animation: breathe-small 500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-small-2-hover:hover {
+                animation: breathe-small 1000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-small-3 {
+                animation: breathe-small 1500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-small-3-hover:hover {
+                animation: breathe-small 1500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+    /* #endregion */
+    /*#region bounce-in */
+        .bounce-in-left {
+            animation: bounce-in-left 600ms;
             animation-timing-function: ease-out;
         }
 
-        .slide-in-left-2 {
-            animation: slide-in-left 1000ms;
+        .bounce-in-right {
+            animation: bounce-in-right 600ms;
+            animation-timing-function: ease-out;
+        }
+    /*#endregion */
+        .fade-in-1 {
+            animation: fade-in 1000ms;
             animation-timing-function: ease-out;
         }
 
-        .slide-in-left-3 {
-            animation: slide-in-left 1500ms;
+        .fade-in-2 {
+            animation: fade-in 1500ms;
             animation-timing-function: ease-out;
         }
 
-    /* slide-in-right */
-    /* Three options, decreasing in speed */
-        .slide-in-right-1 {
-            animation: slide-in-right 500ms;
+        .fade-in-3 {
+            animation: fade-in 2000ms;
             animation-timing-function: ease-out;
         }
 
-        .slide-in-right-2 {
-            animation: slide-in-right 1000ms;
+        .fade-out-1 {
+            animation: fade-out 1000ms;
             animation-timing-function: ease-out;
-        }
-
-        .slide-in-right-3 {
-            animation: slide-in-right 1500ms;
-            animation-timing-function: ease-out;
-        }
-
-    /* slide-in-above */
-    /* Three options, decreasing in speed */
-        .slide-in-above-1 {
-            animation: slide-in-above 500ms;
-            animation-timing-function: ease-out;
-        }
-
-        .slide-in-above-2 {
-            animation: slide-in-above 1000ms;
-            animation-timing-function: ease-out;
-        }
-
-        .slide-in-above-3 {
-            animation: slide-in-above 1500ms;
-            animation-timing-function: ease-out;
-        }
-
-    /* drop-in-left */
-    /* Three options, decreasing in speed */
-        .drop-in-left-1 {
-            animation: drop-in-left 500ms;
-        }
-
-        .drop-in-left-2 {
-            animation: drop-in-left 1000ms;
-        }
-
-        .drop-in-left-3 {
-            animation: drop-in-left 1500ms;
-        }
-
-    /* drop-in-right */
-    /* Three options, decreasing in speed */
-        .drop-in-right-1 {
-            animation: drop-in-right 500ms;
-        }
-
-        .drop-in-right-2 {
-            animation: drop-in-right 1000ms;
-        }
-
-        .drop-in-right-3 {
-            animation: drop-in-right 1500ms;
-        }
-
-    /* spin */
-    /* two orientations: clockwise and counter-clockwise */
-    /* three options : half, whole, and infinite */
-
-        .spin-clockwise-half {
-            animation: half-spin-clockwise 1000ms;
-        }
-
-        .spin-clockwise-whole {
-            animation: spin-clockwise 1000ms;
-        }
-
-        .spin-clockwise-infinite {
-            animation: spin-clockwise 1000ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-        
-        .spin-counter-clockwise-half {
-            animation: half-spin-counter-clockwise 1000ms;
-        }
-
-        .spin-counter-clockwise-whole {
-            animation: spin-counter-clockwise 1000ms;
-        }
-
-        .spin-counter-clockwise-infinite {
-            animation: spin-counter-clockwise 1000ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-
-    /* breathe */
-    /* Three scale option - big, small, medium */
-    /* Three speed options - 1, 2, 3 */
-    /* append -hover to apply on hover*/
-        .breathe-big-1 {
-            animation: breathe-big 500ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-
-        .breathe-big-1-hover:hover {
-            animation: breathe-big 500ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-
-        .breathe-big-2 {
-            animation: breathe-big 500ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-
-        .breathe-big-2-hover:hover {
-            animation: breathe-big 1000ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-
-        .breathe-big-3 {
-            animation: breathe-big 1500ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-
-        .breathe-big-3-hover:hover {
-            animation: breathe-big 1500ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-
-        .breathe-medium-1 {
-            animation: breathe-medium 500ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-
-        .breathe-medium-1-hover:hover {
-            animation: breathe-medium 500ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-
-        .breathe-medium-2 {
-            animation: breathe-medium 500ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-
-        .breathe-medium-2-hover:hover {
-            animation: breathe-medium 1000ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-
-        .breathe-medium-3 {
-            animation: breathe-medium 1500ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-
-        .breathe-medium-3-hover:hover {
-            animation: breathe-medium 1500ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-
-        .breathe-small-1 {
-            animation: breathe-small 500ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-
-        .breathe-small-1-hover:hover {
-            animation: breathe-small 500ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
             animation-fill-mode: forwards;
         }
 
-        .breathe-small-2 {
-            animation: breathe-small 500ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
+        .fade-out-2 {
+            animation: fade-out 1500ms;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
         }
 
-        .breathe-small-2-hover:hover {
-            animation: breathe-small 1000ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
+        .fade-out-3 {
+            animation: fade-out 2000ms;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
         }
 
-        .breathe-small-3 {
-            animation: breathe-small 1500ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-
-        .breathe-small-3-hover:hover {
-            animation: breathe-small 1500ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-
-        .bounce-in-left-small {
-            animation: bounce-in-left-small 600ms;
+        .inflate-1 {
+            animation: inflate 500ms;
             animation-timing-function: ease-out;
         }
 
+        .inflate-2 {
+            animation: inflate 1000ms;
+            animation-timing-function: ease-out;
+        }
+
+        .inflate-3 {
+            animation: inflate 1500ms;
+            animation-timing-function: ease-out;
+        }
+
+        .deflate-1 {
+            animation: deflate 500ms;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+
+        .deflate-2 {
+            animation: deflate 1000ms;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+
+        .deflate-3 {
+            animation: deflate 1500ms;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+
+        .fade-inflate-1 {
+            animation-name: fade-in, inflate;
+            animation-timing-function: ease-out, ease-out;
+            animation-duration: 1000ms, 1000ms;
+        }
+
+        .fade-inflate-2 {
+            animation-name: fade-in, inflate;
+            animation-timing-function: ease-out, ease-out;
+            animation-duration: 1500ms, 1500ms;
+        }
+
+        .fade-inflate-3 {
+            animation-name: fade-in, inflate;
+            animation-timing-function: ease-out, ease-out;
+            animation-duration: 2000ms, 2000ms;
+        }
+
+        .fade-deflate-1 {
+            animation-name: fade-out, deflate;
+            animation-timing-function: ease-out, ease-out;
+            animation-duration: 1000ms, 1000ms;
+            animation-fill-mode: forwards, forwards;
+        }
+
+        .fade-deflate-2 {
+            animation-name: fade-out, deflate;
+            animation-timing-function: ease-out, ease-out;
+            animation-duration: 1500ms, 1500ms;
+            animation-fill-mode: forwards, forwards;
+        }
+
+        .fade-deflate-3 {
+            animation-name: fade-out, deflate;
+            animation-timing-function: ease-out, ease-out;
+            animation-duration: 2000ms, 2000ms;
+            animation-fill-mode: forwards, forwards;
+        }
 /*#endregion Classes */
 
 /* Events */
@@ -401,28 +513,96 @@
         }
     }
 
-    /* name : bounce-in-small */
-    /* purpose : have an object bounce in with small bounces */
-    @keyframes bounce-in-left-small {
+    /* name : bounce-in-left */
+    /* purpose : have an object bounce in from the left with small bounces */
+    @keyframes bounce-in-left {
         0% {
             transform: translateY(0%) translateX(-100%);
             opacity: 0;
         }
         20% {
-            transform: translateY(-40%) translateX(-80%);
+            transform: translateY(-80%) translateX(-80%);
             opacity: 1;
         }
         40% {
-            transform: translateY(-10%) translateX(-50%);
+            transform: translateY(-20%) translateX(-50%);
         }
         60% {
-            transform: translateY(-30%) translateX(-30%);
+            transform: translateY(-60%) translateX(-30%);
         }
         80% {
-            transform: translateY(-15%) translateX(-15%);
+            transform: translateY(-30%) translateX(-15%);
         }
         100% {
             transform: translateY(0%) translateX(0%);
+        }
+    }
+
+    /* name : bounce-in-right */
+    /* purpose : have an object bounce in from the right with small bounces */
+    @keyframes bounce-in-right {
+        0% {
+            transform: translateY(0%) translateX(100%);
+            opacity: 0;
+        }
+        20% {
+            transform: translateY(-80%) translateX(80%);
+            opacity: 1;
+        }
+        40% {
+            transform: translateY(-20%) translateX(50%);
+        }
+        60% {
+            transform: translateY(-60%) translateX(30%);
+        }
+        80% {
+            transform: translateY(-30%) translateX(15%);
+        }
+        100% {
+            transform: translateY(0%) translateX(0%);
+        }
+    }
+    /* name : fade in */
+    /* purpose : fade an object in */
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;;
+        }
+    }
+
+    /* name : fade out */
+    /* purpose : fade an object out */
+    @keyframes fade-out {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;;
+        }
+    }
+
+    /* name : inflate */
+    /* purpose : grow an object into the frame */
+    @keyframes inflate {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+    /* name : deflate */
+    /* purpose : shrink an object from the frame */
+    @keyframes deflate {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(0);
         }
     }
 /*#endregion Keyframes */
