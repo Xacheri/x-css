@@ -4,7 +4,7 @@ A personally crafted, expressive, css library for use in personal projects and c
 x-css is designed to be *simple* and *expressive* and is characterized by:
 
 ### 1. Simplicity
-**x-css** embraces simplicity by offering a concise set of classes with just a handful of variations. This approach minimizes the need for extensive configuration within the class attribute, preventing you from essentially writing out extensive CSS rules inside of your html.
+**x-css** embraces simplicity by offering a concise set of classes with just a handful of variations. This approach minimizes the need for extensive configuration within the class attribute, preventing you from essentially writing out CSS rules inside of your HTML.
 
 ### 2. Descriptive Class Naming
 Unlike many other CSS libraries, **x-css** takes a more descriptive approach to class naming. The class names are intentionally less abbreviated, ensuring that they convey a clear and qualitative description of the effect they impart on your HTML elements.
