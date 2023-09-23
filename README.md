@@ -17,7 +17,7 @@ x-css asks developers not to shy away from writing CSS but rather to use it as a
 ***
 
 ## Documentation
-I'm a simple man with simple documentation. x-css is documented in Markdown in the docs/ folder of the project. To read the documentation, visit the [table of contents](docs/toc.md)
+I'm a simple man with simple documentation. x-css is documented in Markdown in the docs/ folder of the project. To read the documentation, visit the [table of contents](docs/toc.md) \[IN-PROGRESS\]
 
 ## Installation
 You can download the stylesheets from Github as a ZIP or by cloning the repository. Just include the stylesheets folder in your project and link the x-css.css stylesheet in your HTML.

@@ -15,52 +15,52 @@
     flex-direction: column;
 }
 
-.flex-j-center
+.flex-justify-center
 {
     justify-content: center;
 }
 
-.flex-j-start
+.flex-justify-start
 {
     justify-content: flex-start;
 }
 
-.flex-j-end
+.flex-justify-end
 {
     justify-content: flex-end;
 }
 
-.flex-j-around 
+.flex-justify-around 
 {
     justify-content: space-around;
 }
 
-.flex-j-between 
+.flex-justify-between 
 {
     justify-content: space-between;
 }
 
-.flex-a-center
+.flex-align-center
 {
     align-items: center;
 }
 
-.flex-a-start
+.flex-align-start
 {
     align-items: flex-start;
 }
 
-.flex-a-end
+.flex-align-end
 {
     align-items: flex-end;
 }
 
-.flex-a-around 
+.flex-align-around 
 {
     align-items: space-around;
 }
 
-.flex-a-between 
+.flex-align-between 
 {
     align-items: space-between;
 }

@@ -21,9 +21,8 @@
         - 3.3.1  Background Effects
 
    - 3.4 Component Classes (Coming Soon)
-
 4. Customization (Coming Soon)
-
+   - 4.1 Calculated Classes
 5. Integration (Coming Soon)
 
 6. Best Practices (Coming Soon)
